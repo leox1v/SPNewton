@@ -42,6 +42,7 @@ class Visualizer():
         df = self.dict_to_pandas(_dic, x_every, value)
         sns.tsplot(data=df, time="Epoch", value=value, condition="Optimizer", unit="Runs", ci=90)
         # plt.savefig(save_name("plots/plot_{}.png".format(value.replace(" ", "_"))))
+        plt.show()
 
     def dict_to_pandas(self, _dict, x_every, value):
         columns = ["Runs", "Optimizer", value, "Epoch"]
