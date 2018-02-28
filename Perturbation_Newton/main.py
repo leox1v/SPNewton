@@ -4,11 +4,10 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import seaborn as sns
-from model import Model
+from Perturbation_Newton.model import Model
 import pprint
-from utils import *
-from utils import Helper
-from dataset import DataSet
+from Perturbation_Newton.utils import *
+from Perturbation_Newton.dataset import DataSet
 import pickle
 
 
